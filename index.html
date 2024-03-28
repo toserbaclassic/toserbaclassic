@@ -448,7 +448,9 @@
 
       <!-- copyright -->
       <div class="text-center p-4 border-top">
-        &copy; 2013 - 2023 tosic. - Toserba Classic
+        &copy; 2013 -
+        <span id="tahun"></span>
+        tosic. - Toserba Classic
       </div>
     </div>
 
@@ -517,3 +519,8 @@
     <script src="javascript/main.js"></script>
   </body>
 </html>
+
+<script>
+  var dt = new Date();
+  document.getElementById("tahun").innerHTML = dt.getFullYear();
+</script>
